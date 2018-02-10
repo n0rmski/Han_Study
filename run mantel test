@@ -1,0 +1,4 @@
+library(ape)
+DistMatTop <- as.matrix(Dist_top)
+DistMatBot <- as.matrix(Dist_bot)
+mantel.test(DistMatTop, DistMatBot, nperm = 99999, graph = TRUE)
